@@ -1,0 +1,23 @@
+﻿@model SeyahatBlogMVC.Models.Siniflar.Blog
+ 
+@{
+    ViewBag.Title = "YeniBlogEkle";
+    Layout = "~/Views/Shared/Admin_View.cshtml";
+}
+
+<h2>YeniBlogEkle</h2>
+
+<form class="form-group" method="post">
+    @Html.LabelFor(m => m.BlokBaslik)
+    @Html.TextBoxFor(m => m.BlokBaslik, new { @class = "form-control" })
+    @Html.LabelFor(m => m.BlogResimUrl)
+    @Html.TextBoxFor(m => m.BlogResimUrl, new { @class = "form-control" })
+    @Html.LabelFor(m => m.BlokTarih)
+    @Html.TextBoxFor(m => m.BlokTarih, new { @class = "form-control" })
+
+    @Html.LabelFor(m => m.BlokAciklama)
+    @Html.TextAreaFor(m => m.BlokAciklama,15,1, new { @class = "form-control" })
+
+    <br />
+    <button class="btn-info">Blog Kaydet</button>
+</form>

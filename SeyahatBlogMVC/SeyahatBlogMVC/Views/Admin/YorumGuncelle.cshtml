@@ -1,0 +1,26 @@
+﻿@model SeyahatBlogMVC.Models.Siniflar.Yorum
+
+@{
+    ViewBag.Title = "YorumGuncelle";
+    Layout = "~/Views/Shared/Admin_View.cshtml";
+}
+
+@using (Html.BeginForm("Yguncelle", "Admin", FormMethod.Post))
+{
+
+    @Html.LabelFor(x => x.YorumId)
+    @Html.TextBoxFor(x => x.YorumId, new { @class = "form-control", @readonly = "readonly" })
+    @Html.LabelFor(x => x.KullaniciAdi)
+    @Html.TextBoxFor(x => x.KullaniciAdi, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Mail)
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control"})
+    @Html.LabelFor(x => x.Acıklama)
+    @Html.TextBoxFor(x => x.Acıklama, new { @class = "form-control"})
+    @Html.LabelFor(x => x.Blog.BlokBaslik)
+    @Html.TextBoxFor(x => x.Blog.BlokBaslik, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    <button class="btn btn-info"> Güncelle</button>
+}
+
+
+

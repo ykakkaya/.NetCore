@@ -1,0 +1,25 @@
+﻿@using SeyahatBlogMVC.Models.Siniflar
+@model List<Blog>
+
+<div class="padding1">
+    <h4>FAVORİ YERLERİM</h4>
+    <div class="box-left">
+        @foreach (var item in Model)
+        {
+
+            <div class="bot-img">
+                <img src="@item.BlogResimUrl" alt="" />
+            </div>
+            <div class="bot-desc">
+                <a href="/Blog/BlogDetay/@item.BlogId">@item.BlokBaslik</a>
+                <p>@item.BlokAciklama.Substring(0, 48) </p>
+            </div>
+            <div class="clear"></div>
+
+
+
+        }
+    </div>
+    @Html.Action("Partial5", "Home")
+</div>
+

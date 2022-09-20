@@ -1,0 +1,25 @@
+﻿@using SeyahatBlogMVC.Models.Siniflar
+@model List<Hakkimizda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Main_View.cshtml";
+}
+
+
+
+<div class="content">
+    <div class="wrap">
+        <div class="about">
+            <h3>HAKKIMIZDA</h3>
+            @foreach (var item in Model)
+            {
+            <img src="@item.HakkimizdaFotoUrl" alt="" />
+            <p>@item.HakkimizdaAciklama</p>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,27 @@
+﻿@model SeyahatBlogMVC.Models.Siniflar.Blog
+
+@{
+    ViewBag.Title = "BlogGuncelle";
+    Layout = "~/Views/Shared/Admin_View.cshtml";
+}
+<h2>BlogGuncelle</h2>
+
+@using (Html.BeginForm("Guncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.BlogId)
+    @Html.TextAreaFor(m => m.BlogId, new { @class = "form-control" , @readonly="readonly"})
+
+    @Html.LabelFor(m => m.BlokBaslik)
+    @Html.TextAreaFor(m => m.BlokBaslik, new { @class = "form-control" })
+    @Html.LabelFor(m => m.BlogResimUrl)
+    @Html.TextAreaFor(m => m.BlogResimUrl, new { @class = "form-control" })
+    @Html.LabelFor(m => m.BlokTarih)
+    @Html.TextAreaFor(m => m.BlokTarih, new { @class = "form-control" })
+    @Html.LabelFor(m => m.BlokAciklama)
+    @Html.TextAreaFor(m => m.BlokAciklama, 10, 1, new { @class = "form-control" })
+    <br />
+    <button class="btn-danger">Güncelle</button>
+
+}
+
+

@@ -1,0 +1,18 @@
+﻿@using SeyahatBlogMVC.Models.Siniflar
+@model List<Blog>
+
+@foreach (var item in Model)
+{
+<div class="right">
+    <div class="bot-left">
+        <img src="@item.BlogResimUrl" alt="" style="height:160px;width:300px" />
+    </div>
+    <div class="left-text">
+
+        <h4>@item.BlokBaslik</h4>
+        <span class="doller">@item.BlokTarih.ToString("d")</span>
+        <p>@item.BlokAciklama.Substring(0,150)</p>
+        <p><a href="#"><span class="read">DEVAMI >></span></a></p>
+    </div>
+</div>
+}

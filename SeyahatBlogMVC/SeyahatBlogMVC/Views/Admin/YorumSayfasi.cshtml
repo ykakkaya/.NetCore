@@ -1,0 +1,37 @@
+﻿@using SeyahatBlogMVC.Models.Siniflar
+@model List<Yorum>
+
+@{
+    ViewBag.Title = "YorumSayfasi";
+    Layout = "~/Views/Shared/Admin_View.cshtml";
+}
+
+<h2>YorumSayfasi</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>ID</th>
+        <th>KULLANICI ADI</th>
+        <th>MAİL</th>
+        <th>YORUM</th>
+        <th>YORUMLANAN BLOG</th>
+        <th>YORUM SİL</th>
+        <th>YORUM GÜNCELLE</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <th>@item.BlogId</th>
+            <th>@item.KullaniciAdi</th>
+            <th>@item.Mail</th>
+            <th>@item.Acıklama</th>
+            <th>@item.Blog.BlokBaslik</th>
+            <th><a href="/Admin/YorumSil/@item.YorumId" class="btn btn-danger">SİL</a></th>
+            <th><a href="/Admin/YorumGuncelle/@item.YorumId" class=" btn btn-primary">GÜNCELLE</a></th>
+        </tr>
+     }
+    
+
+</table>
+

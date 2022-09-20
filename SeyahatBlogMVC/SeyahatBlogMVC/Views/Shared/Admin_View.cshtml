@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<title>TATİL & SEYEHAT SİTESİ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="/Admin/index/" class="w3-bar-item w3-button">Bloglar</a>
+        <a href="/Admin/YorumSayfasi/" class="w3-bar-item w3-button">Yorumlar</a>
+        <a href="/AdminIletisim/index" class="w3-bar-item w3-button">İletişim</a>
+        <a href="AdminHakkimizda/index" class="w3-bar-item w3-button">Hakkımızda</a>
+        <a href="/Home/index" class="w3-bar-item w3-button">Siteye Git</a>
+        <a href="/Giris/LogOut" class="w3-bar-item w3-button">ÇIKIŞ</a>
+        <div id="ww_b0336c4447ad0" v='1.20' loc='id' a='{"t":"horizontal","lang":"tr","ids":["wl3400"],"cl_bkg":"#0097A7","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#FFFFFF","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","el_phw":3}'>Weather Data Source: <a href="https://wetterlabs.de/wetter_kayseri/30_tage/" id="ww_b0336c4447ad0_u" target="_blank">30 tage wetter Kayseri</a></div>
+        <script async src="https://srv1.weatherwidget.org/js/?id=ww_b0336c4447ad0"></script>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:15%">
+
+        <div class="w3-container w3-teal">
+            <h1>Admin Paneli</h1>
+        </div>
+
+        
+
+        <div class="w3-container">
+        @RenderBody()
+        </div>
+
+    </div>
+
+</body>
+</html>
+

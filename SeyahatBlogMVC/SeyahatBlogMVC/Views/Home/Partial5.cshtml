@@ -1,0 +1,21 @@
+﻿@using SeyahatBlogMVC.Models.Siniflar
+@model List<Blog>
+
+
+<div class="box1-left">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="bot-img">
+            <img src="@item.BlogResimUrl" alt="" />
+        </div>
+        <div class="bot-desc1">
+            <a href="/Blog/BlogDetay/@item.BlogId">@item.BlokBaslik</a>
+            <p>@item.BlokAciklama.Substring(0, 48) </p>
+        </div>
+        <div class="clear"></div>
+
+
+    }
+</div>
