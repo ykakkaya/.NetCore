@@ -1,6 +1,7 @@
-# .NetCore
+# .NetCore VE .Net MVC
 ## MVC çalışmaları
 ** MVC ile static bir CV site uygulaması
+
 ![1](https://user-images.githubusercontent.com/100940437/191247427-16f5cfaa-fbd5-40a7-a6e2-f5e0915a4feb.jpg)
 
 **MVC İLE dinamik bir Tatil syahat blog sitesi uygulaması
