@@ -3,7 +3,7 @@
 
 **1. code first yaklaşımı kullanıldı.**
 
-**2. 4 katmanlı mimari (entity-dataaccess-business-api)**
+**2. 4 katmanlı mimari (Entity-DataAccess-Business-WebApi)**
 
 **3. Dependency injection kullanıldı.** 
 
