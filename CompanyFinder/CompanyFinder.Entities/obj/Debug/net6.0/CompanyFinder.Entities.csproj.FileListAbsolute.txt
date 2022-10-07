@@ -1,0 +1,12 @@
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\bin\Debug\net6.0\CompanyFinder.Entities.deps.json
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\bin\Debug\net6.0\CompanyFinder.Entities.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\bin\Debug\net6.0\CompanyFinder.Entities.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\refint\CompanyFinder.Entities.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\CompanyFinder.Entities.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Entities\obj\Debug\net6.0\ref\CompanyFinder.Entities.dll

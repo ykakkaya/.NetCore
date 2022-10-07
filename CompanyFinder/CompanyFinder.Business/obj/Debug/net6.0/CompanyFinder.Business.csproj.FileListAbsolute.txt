@@ -1,0 +1,17 @@
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.Business.deps.json
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.Business.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.Business.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.DataAccess.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.Entities.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.DataAccess.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\bin\Debug\net6.0\CompanyFinder.Entities.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\refint\CompanyFinder.Business.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\CompanyFinder.Business.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.Business\obj\Debug\net6.0\ref\CompanyFinder.Business.dll

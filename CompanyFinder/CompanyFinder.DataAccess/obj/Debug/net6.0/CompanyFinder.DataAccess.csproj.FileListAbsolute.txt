@@ -1,0 +1,17 @@
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\bin\Debug\net6.0\CompanyFinder.DataAccess.deps.json
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\bin\Debug\net6.0\CompanyFinder.DataAccess.runtimeconfig.json
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\bin\Debug\net6.0\CompanyFinder.DataAccess.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\bin\Debug\net6.0\CompanyFinder.DataAccess.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\bin\Debug\net6.0\CompanyFinder.Entities.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\bin\Debug\net6.0\CompanyFinder.Entities.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\refint\CompanyFinder.DataAccess.dll
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.pdb
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\CompanyFinder.DataAccess.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\CompanyFinder\CompanyFinder.DataAccess\obj\Debug\net6.0\ref\CompanyFinder.DataAccess.dll
