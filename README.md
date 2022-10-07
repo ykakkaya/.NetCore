@@ -1,4 +1,10 @@
 # .NetCore VE .Net MVC
+## .net core 6.0 ile web api
+** code first yaklaşımı ve 4 katmanlı mimari (entity-dataaccess-business-api) ve dependency injection kullanıldı.
+
+![1](https://user-images.githubusercontent.com/100940437/194642651-d24f36af-6148-478f-b076-8b0093d6f63e.jpg)
+
+
 ## MVC çalışmaları
 ** MVC ile static bir CV site uygulaması
 
