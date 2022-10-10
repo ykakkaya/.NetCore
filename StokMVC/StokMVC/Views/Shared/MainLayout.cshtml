@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MVC STOK TAKİP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MVC STOK TAKİP</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/kategori/index">KATEGORİLER</a></li>
+                <li><a href="/urun/index">ÜRÜNLER</a></li>
+                <li><a href="/musteri/index">MÜŞTERİLER</a></li>
+                <li><a href="/satis/index">SATIŞ</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div>
+        <div id="ww_5fa4ec76a6f86" v='1.20' loc='auto' a='{"t":"responsive","lang":"tr","ids":[],"cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"7","sl_sot":"celsius","sl_ics":"one_a","font":"Arial"}'><a href="https://wetter-heute.org/" id="ww_5fa4ec76a6f86_u" target="_blank">Wetter Heute</a></div>
+        <script async src="https://srv1.weatherwidget.org/js/?id=ww_5fa4ec76a6f86"></script>
+    </div>
+    
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+</body>
+</html>
+

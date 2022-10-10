@@ -1,0 +1,32 @@
+﻿@model StokMVC.Models.Entity.TBLUrun
+
+
+@{
+    ViewBag.Title = "UrunGuncelle";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<h2>Ürün Güncelleme Sayfası</h2>
+
+
+@using (Html.BeginForm("Guncelle", "Urun", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.LabelFor(m => m.UrunId)
+    @Html.TextBoxFor(m => m.UrunId, new { @class = "form-control" })
+    @Html.LabelFor(m => m.UrunAd)
+    @Html.TextBoxFor(m => m.UrunAd, new { @class = "form-control" })
+    @Html.LabelFor(m => m.UrunKategori)
+    @Html.TextBoxFor(m => m.UrunKategori, new { @class = "form-control" })
+    @Html.LabelFor(m => m.UrunStok)
+    @Html.TextBoxFor(m => m.UrunStok, new { @class = "form-control" })
+    @Html.LabelFor(m => m.UrunMarka)
+    @Html.TextBoxFor(m => m.UrunMarka, new { @class = "form-control" })
+    @Html.LabelFor(m => m.UrunFiyat)
+    @Html.TextBoxFor(m => m.UrunFiyat, new { @class = "form-control" })
+</div>
+
+<div style="margin-top:15px">
+    <button class="btn-warning" onclick="alert('ürün güncellendi');">ÜRÜNLERİ GÜNCELLE</button>
+</div>
+}

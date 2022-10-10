@@ -1,0 +1,22 @@
+﻿@model StokMVC.Models.Entity.TBLKategori
+@{
+    ViewBag.Title = "YeniKategoriEkle";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<h2>Yeni Kategori Ekleme Sayfası</h2>
+
+<form class="form-group" method="post">
+    <div>
+        <label>KATEGORİ İSMİ</label>
+        @Html.TextBoxFor(m=> m.KategoriAd , new {@class="form-control"})
+        @Html.ValidationMessageFor(m=>m.KategoriAd,"",new {@style="color:red" })
+    </div>
+    <div style="margin-top:15px">
+        <button class=" btn-info" onclick="alert('KATEGORİ Kaydedildi');">KATEGORİ KAYDET</button>
+    </div>
+ 
+    
+
+</form>
+

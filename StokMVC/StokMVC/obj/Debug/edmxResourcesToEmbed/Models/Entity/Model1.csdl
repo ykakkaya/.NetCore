@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBStokTakipModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBLKategori">
+    <Key>
+      <PropertyRef Name="KategoriId" />
+    </Key>
+    <Property Name="KategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBLUrun" Relationship="Self.FK_TBLUrun_TBLKategori" FromRole="TBLKategori" ToRole="TBLUrun" />
+  </EntityType>
+  <EntityType Name="TBLMusteri">
+    <Key>
+      <PropertyRef Name="MusteriId" />
+    </Key>
+    <Property Name="MusteriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MusteriSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBLSatis" Relationship="Self.FK_TBLSatis_TBLMusteri" FromRole="TBLMusteri" ToRole="TBLSatis" />
+  </EntityType>
+  <EntityType Name="TBLSatis">
+    <Key>
+      <PropertyRef Name="SatisId" />
+    </Key>
+    <Property Name="SatisId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Urun" Type="Int32" />
+    <Property Name="Musteri" Type="Int32" />
+    <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Adet" Type="Int32" />
+    <NavigationProperty Name="TBLMusteri" Relationship="Self.FK_TBLSatis_TBLMusteri" FromRole="TBLSatis" ToRole="TBLMusteri" />
+    <NavigationProperty Name="TBLUrun" Relationship="Self.FK_TBLSatis_TBLUrun" FromRole="TBLSatis" ToRole="TBLUrun" />
+  </EntityType>
+  <EntityType Name="TBLUrun">
+    <Key>
+      <PropertyRef Name="UrunId" />
+    </Key>
+    <Property Name="UrunId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UrunKategori" Type="Int32" />
+    <Property Name="UrunFiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="UrunStok" Type="Int32" />
+    <Property Name="UrunMarka" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TBLKategori" Relationship="Self.FK_TBLUrun_TBLKategori" FromRole="TBLUrun" ToRole="TBLKategori" />
+    <NavigationProperty Name="TBLSatis" Relationship="Self.FK_TBLSatis_TBLUrun" FromRole="TBLUrun" ToRole="TBLSatis" />
+  </EntityType>
+  <Association Name="FK_TBLUrun_TBLKategori">
+    <End Role="TBLKategori" Type="Self.TBLKategori" Multiplicity="0..1" />
+    <End Role="TBLUrun" Type="Self.TBLUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLKategori">
+        <PropertyRef Name="KategoriId" />
+      </Principal>
+      <Dependent Role="TBLUrun">
+        <PropertyRef Name="UrunKategori" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBLSatis_TBLMusteri">
+    <End Role="TBLMusteri" Type="Self.TBLMusteri" Multiplicity="0..1" />
+    <End Role="TBLSatis" Type="Self.TBLSatis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLMusteri">
+        <PropertyRef Name="MusteriId" />
+      </Principal>
+      <Dependent Role="TBLSatis">
+        <PropertyRef Name="Musteri" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBLSatis_TBLUrun">
+    <End Role="TBLUrun" Type="Self.TBLUrun" Multiplicity="0..1" />
+    <End Role="TBLSatis" Type="Self.TBLSatis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBLUrun">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="TBLSatis">
+        <PropertyRef Name="Urun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBStokTakipEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TBLKategori" EntityType="Self.TBLKategori" />
+    <EntitySet Name="TBLMusteri" EntityType="Self.TBLMusteri" />
+    <EntitySet Name="TBLSatis" EntityType="Self.TBLSatis" />
+    <EntitySet Name="TBLUrun" EntityType="Self.TBLUrun" />
+    <AssociationSet Name="FK_TBLUrun_TBLKategori" Association="Self.FK_TBLUrun_TBLKategori">
+      <End Role="TBLKategori" EntitySet="TBLKategori" />
+      <End Role="TBLUrun" EntitySet="TBLUrun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBLSatis_TBLMusteri" Association="Self.FK_TBLSatis_TBLMusteri">
+      <End Role="TBLMusteri" EntitySet="TBLMusteri" />
+      <End Role="TBLSatis" EntitySet="TBLSatis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBLSatis_TBLUrun" Association="Self.FK_TBLSatis_TBLUrun">
+      <End Role="TBLUrun" EntitySet="TBLUrun" />
+      <End Role="TBLSatis" EntitySet="TBLSatis" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

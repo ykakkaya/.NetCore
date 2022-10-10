@@ -1,0 +1,26 @@
+﻿@model StokMVC.Models.Entity.TBLUrun
+@{
+    ViewBag.Title = "YeniUrunEkle";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<h2>Yeni Ürun Ekleme Sayfası</h2>
+
+<form class="form-group" method="post">
+    <div>
+        <label>ÜRÜN ADI</label>
+        <input class="form-control" type="text" name="UrunAd" required="" />
+        <label>ÜRÜN KATEGORİSİ SEÇİNİZ</label>
+        @Html.DropDownListFor(m=>m.TBLKategori.KategoriId,(List<SelectListItem>)ViewBag.dgr,new {@class="form-control"});
+        <label>ÜRÜN FİYAT</label>
+        <input class="form-control" type="text" name="UrunFiyat" required="" />
+        <label>ÜRÜN STOK</label>
+        <input class="form-control" type="text" name="UrunStok" required="" />
+        <label>ÜRÜN MARKA</label>
+        <input class="form-control" type="text" name="UrunMarka" required=""/>
+
+    </div>
+    <div style="margin-top:15px">
+        <button class="btn-info" onclick="alert('yeni ürün eklendi');">ÜRÜN KAYDET</button>
+    </div>
+</form>
