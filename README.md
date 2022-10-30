@@ -1,5 +1,5 @@
 # .NetCore VE .Net MVC
-##.net core yöresel ürünler projesi
+## .Net Core _yöresel ürünler projesi_
 **1-Code First**
 **2-Authorize** 
 **3-Login form**
