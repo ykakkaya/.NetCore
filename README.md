@@ -1,4 +1,12 @@
 # .NetCore VE .Net MVC
+##.net core yöresel ürünler projesi
+**1-Code First**
+**2-Authorize** 
+**3-Login form**
+**4-Dynamic Google Chart and Statistics**
+**5-Partial Component**
+**6-Generic Repository**
+
 ## .net core 6.0 ile web api
 
 **1. code first yaklaşımı kullanıldı.**
