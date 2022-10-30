@@ -1,0 +1,40 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+@model IPagedList<FoodCore.Models.Category>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_MainLoyout.cshtml";
+}
+
+<h1>Kategori Index Sayfası </h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Kategori ID</th>
+            <th>Kategori Adı</th>
+            <th>Kategori Durum</th>
+            <th>Kategori Bilgi</th>
+            <th>Kategori Güncelle</th>
+            <th>Kategori Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@item.CategoryName</td>
+                <td>@(@item.CategoryStatus == true ? "AKTİF" : "PASİF")</td>
+            <td>@item.CategoryDesc</td>
+            <td><a href="/Category/GetCategory/@item.CategoryId" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-warning">Sil</a></td>
+        </tr>
+        }
+        </tbody>
+        
+</table>
+@Html.PagedListPager((IPagedList)Model,page=>Url.Action("index",new{page}))
+<br />
+<a href="/Category/CategoryAdd" class="btn btn-danger">Kategori Ekle</a>
+

@@ -1,0 +1,40 @@
+﻿@model FoodCore.Models.Food
+@{
+    ViewData["Title"] = "GetFood";
+    Layout = "~/Views/Shared/_MainLoyout.cshtml";
+}
+
+<h1>ÜRÜN GÜNCELLEME SAYFASI</h1>
+
+@using (Html.BeginForm("UpdateFood", "Food", FormMethod.Post))
+{
+    
+    @Html.HiddenFor(x=>x.FoodId, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN ADI")
+    @Html.TextBoxFor(x=>x.FoodName, new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.FoodName,"",new{@style= "color:red"})
+    <br />
+    @Html.Label("ÜRÜN FİYATI")
+    @Html.TextBoxFor(x=>x.FoodPrice, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN STOK")
+    @Html.TextBoxFor(x=>x.FoodStock, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN Durumu")
+    @Html.TextBoxFor(x=>x.FoodStatus, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN RESİM ADRESİ")
+    @Html.TextBoxFor(x=>x.FoodImgUrl, new{@class="form-control"})
+    <br />
+    @Html.Label("Kategori")
+    @Html.DropDownListFor(x=>x.CategoryId,(List<SelectListItem>)ViewBag.v1, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN BİLGİSİ")
+    @Html.TextAreaFor(x=>x.FoodDesc, new{@class="form-control"})
+
+    <br />
+    <button class="btn btn-info">Ürün Güncelle</button>
+
+
+}

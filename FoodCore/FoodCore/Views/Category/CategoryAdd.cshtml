@@ -1,0 +1,22 @@
+﻿@model FoodCore.Models.Category
+
+@{
+    ViewData["Title"] = "CategoryAdd";
+    Layout = "~/Views/Shared/_MainLoyout.cshtml";
+}
+
+<h1>KATEGORİ EKLEME SAYFASI</h1>
+
+@using(Html.BeginForm("CategoryAdd","Category",FormMethod.Post)){
+
+    @Html.Label("KATEGORİ ADI")
+    @Html.TextBoxFor(x=>x.CategoryName ,new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.CategoryName,"",new{@style= "color:red"})
+    <br />
+    @Html.Label("KATEGORİ BİLGİ")
+    @Html.TextBoxFor(x=>x.CategoryDesc ,new{@class="form-control"})
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+
+}
+

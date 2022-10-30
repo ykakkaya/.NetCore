@@ -1,0 +1,36 @@
+﻿@model FoodCore.Models.Food
+@{
+    ViewData["Title"] = "AddFood";
+    Layout = "~/Views/Shared/_MainLoyout.cshtml";
+}
+
+<h1>Ürün Ekleme Sayfası</h1>
+
+@using(Html.BeginForm("AddFood","Food",FormMethod.Post)){
+
+    
+    @Html.Label("ÜRÜN ADI")
+    @Html.TextBoxFor(x=>x.FoodName, new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.FoodName,"",new{@style= "color:red"})
+    <br />
+    @Html.Label("ÜRÜN FİYATI")
+    @Html.TextBoxFor(x=>x.FoodPrice, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN STOK")
+    @Html.TextBoxFor(x=>x.FoodStock, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN RESİM ADRESİ")
+    @Html.TextBoxFor(x=>x.FoodImgUrl, new{@class="form-control"})
+    <br />
+    @Html.Label("Kategori")
+    @Html.DropDownListFor(x=>x.CategoryId,(List<SelectListItem>)ViewBag.v1, new{@class="form-control"})
+    <br />
+    @Html.Label("ÜRÜN BİLGİSİ")
+    @Html.TextAreaFor(x=>x.FoodDesc, new{@class="form-control"})
+
+    <br />
+    <button class="btn btn-info">Ürün Ekle</button>
+
+
+}
+

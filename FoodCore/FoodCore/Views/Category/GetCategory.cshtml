@@ -1,0 +1,28 @@
+﻿@model FoodCore.Models.Category
+@{
+    ViewData["Title"] = "GetCategory";
+    Layout = "~/Views/Shared/_MainLoyout.cshtml";
+}
+
+<h1>KATEGORİ GÜNCELLEME SAYFASI</h1>
+
+@using(Html.BeginForm("UpdateCategory","Category",FormMethod.Post)){
+
+  
+    @Html.HiddenFor(x=>x.CategoryId, new{@class="form-control"})
+    <br />
+    @Html.Label("KATEGORİ Adı")
+    @Html.TextBoxFor(x=>x.CategoryName, new{@class="form-control"})
+    <br />
+    @Html.Label("KATEGORİ Açıklama")
+    @Html.TextBoxFor(x=>x.CategoryDesc, new{@class="form-control"})
+    <br />
+    @Html.Label("KATEGORİ Durumu")
+    @Html.TextBoxFor(x=>x.CategoryStatus, new{@class="form-control"})
+    <br />
+    <button class="btn btn-danger">GÜNCELLE</button>
+}
+
+
+
+
